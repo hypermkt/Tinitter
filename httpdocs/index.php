@@ -10,4 +10,6 @@ $app = new \Slim\Slim([
 
 \Tinitter\Route::registration($app);
 
+\Base\DB::registerIlluminate($db_settings);
+
 $app->run();
